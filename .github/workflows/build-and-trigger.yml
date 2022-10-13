@@ -17,10 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: run axelor-admin
-        run: |
-          cd axelor-admin
-          gradle clean build
       - name: trigger
         run: |
           curl -XPOST \
