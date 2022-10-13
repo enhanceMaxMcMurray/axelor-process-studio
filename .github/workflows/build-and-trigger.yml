@@ -20,7 +20,7 @@ jobs:
       - name: run axelor-admin
         run: |
           cd axelor-admin
-          ./gradlew clean build
+          ./gradle clean build
       - name: trigger
         run: |
           curl -XPOST \
